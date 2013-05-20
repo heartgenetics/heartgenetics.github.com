@@ -9,7 +9,8 @@
 
     <!-- Le styles -->
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/extra.css" rel="stylesheet">
+    <!-- <link href="css/bootstrap-responsive.css" rel="stylesheet"> -->
     <style>
 
     /* GLOBAL STYLES
@@ -21,8 +22,6 @@
       color: #5a5a5a;
     }
 
-
-
     /* CUSTOMIZE THE NAVBAR
     -------------------------------------------------- */
 
@@ -32,8 +31,9 @@
       top: 0;
       left: 0;
       right: 0;
+      height: 71px;
       z-index: 10;
-      margin-top: 20px;
+      margin-top: 78px;
       margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
     }
     .navbar-wrapper .navbar {
@@ -181,8 +181,8 @@
         width: auto;
       }
       .navbar-inner {
-        border-radius: 0;
-        margin: -20px 0;
+        /*border-radius: 0;*/
+        /*margin: -20px 0;*/
       }
 
       .carousel .item {
@@ -210,7 +210,7 @@
     @media (max-width: 767px) {
 
       .navbar-inner {
-        margin: -20px;
+        /*margin: -20px;*/
       }
 
       .carousel {
@@ -252,6 +252,8 @@
       }
 
     }
+
+
     </style>
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -270,9 +272,19 @@
   <body>
 
 
-
     <!-- NAVBAR
     ================================================== -->
+
+  <div id="topHolder">
+    <div id="logoArea">
+      <span>
+        <a href="http://www.heartgenetics.com"><img src="img/logo.png" style="float:left"></a>
+        <a class="facebook_cube3d tsc_social_cube64" title="facebook" href="http://www.facebook.com/heartgeneticssa"></a>
+        <a class="twitter_cube3d tsc_social_cube64" title="twitter" href="http://www.twitter.com/heartgeneticssa"></a>
+        <a class="in_cube3d tsc_social_cube64" title="linkedin" href="http://www.linkedin.com/company/heartgenetics"></a>
+      </span>
+    </div>
+
     <div class="navbar-wrapper">
       <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
       <div class="container">
@@ -289,8 +301,7 @@
             <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
             <div class="nav-collapse collapse">
               <ul class="nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="#about">Services</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="#location">Location</a></li>
                 <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
@@ -339,7 +350,7 @@ specificity of 99%.</p>
           <div class="container">
             <div class="carousel-caption">
               <h1>Efficient</h1>
-              <p class="lead">A total of 1000 mutations are analysed by
+              <p class="lead">A total of 957 mutations are analysed by
 high-throughput technologies allowing their detection in about four weeks.</p>
               <a class="btn btn-large btn-primary" href="#about">Learn more</a>
             </div>
@@ -361,19 +372,19 @@ of HCM.</p>
       <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
       <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
     </div><!-- /.carousel -->
-
+  </div>
 
 
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
-    <div id="about" class="container marketing">
+    <div class="container marketing">
 
       <!-- Three columns of text below the carousel -->
-      <div class="row text-center">
+      <div id="about" class="row text-center">
         <div class="span6 offset3">
-          <img class="img-circle" src="img/dna_col2.jpg" style="width: 140px; height: 140px;">
+          <img class="img-circle" src="img/col_pic.png" style="width: 140px; height: 140px;">
           <h2>Cardiac Sudden Death Panel</h2>
           <table class="table">
             <thead>
@@ -415,13 +426,9 @@ of HCM.</p>
       </div><!-- /.row -->
 
 
-      <!-- START THE FEATURETTES -->
       <hr class="featurette-divider">
-      <!-- /END THE FEATURETTES -->
-    </div><!--  End of About -->
 
-    <div id="contact" class="container marketing">
-      <div class="row text-center">
+      <div id="contact" class="row text-center">
         <div class="span6 offset3">
 
           <h2>Contact</h2>
@@ -450,26 +457,25 @@ of HCM.</p>
           </table>
         </div>
       </div>
-    </div>
 
-    <hr class="featurette-divider">
+      <hr class="featurette-divider">
 
-	<div id="location" class="google-maps text-center" style="width: 920px; margin: 0px auto">
-		<h2 style="font-weight: normal;">Headquarters Location</h2>
-		<iframe width="920" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.pt/maps/ms?msa=0&amp;msid=202708294139366621835.0004d889c5d81a4e4c050&amp;ie=UTF8&amp;ll=38.999411,-9.065668&amp;spn=0,0&amp;t=m&amp;iwloc=0004d889ca0a8cfba43a0&amp;output=embed"></iframe>
-		<img src="img/shadow.png" style="margin-top: -8px">
-	</div>
+      <div id="location" class="google-maps text-center" style="width: 920px; margin: 0px auto">
+        <h2 style="font-weight: normal;">Headquarters Location</h2>
+        <iframe width="920" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.pt/maps/ms?msa=0&amp;msid=202708294139366621835.0004d889c5d81a4e4c050&amp;ie=UTF8&amp;ll=38.999411,-9.065668&amp;spn=0,0&amp;t=m&amp;iwloc=0004d889ca0a8cfba43a0&amp;output=embed"></iframe>
+        <img src="img/shadow.png" style="margin-top: -8px">
+      </div>
 
-    <hr class="featurette-divider">
+      <hr class="featurette-divider">
 
-    <div class="partners" style="width:600px; margin:0 auto;">
-      <img src="img/pme_inv.jpg">
-      <img src="img/finova.jpg">
-      <img src="img/compete.jpg">
-      <img src="img/ue_feder.jpg">
-    </div>
+      <div class="partners" style="width:600px; margin:0 auto;">
+        <img src="img/pme_inv.jpg">
+        <img src="img/finova.jpg">
+        <img src="img/compete.jpg">
+        <img src="img/ue_feder.jpg">
+      </div>
 
-    <hr class="featurette-divider">
+      <hr class="featurette-divider">
 
       <!-- FOOTER -->
       <footer>
@@ -477,6 +483,7 @@ of HCM.</p>
         <p>© 2013 HeartGenetics, Genetics and Biotechnology</p>
       </footer>
 
+    </div>
 
 
     <!-- Le javascript
