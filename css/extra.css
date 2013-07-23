@@ -12,6 +12,12 @@
   height: 70px;
 }
 
+iframe {
+ border:0;
+ overflow:hidden;
+ margin:0;
+}
+
 .tsc_social_cube64 { display: inline-block; overflow: hidden; text-indent: -999em; height:64px; width:64px; text-decoration: none; margin-top: 40px; vertical-align:middle; float:right; }
 .tsc_social_cube64:hover{ background-position:0 -64px; opacity:0.85; }
 .facebook_cube3d{ background:url(facebook-cube64.png) no-repeat; }
