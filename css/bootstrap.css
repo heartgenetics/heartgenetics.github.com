@@ -264,8 +264,8 @@ a:focus {
 }
 
 .row {
-  margin-left: -20px;
-  *zoom: 1;
+  /* margin-left: -20px;
+  *zoom: 1; */
 }
 
 .row:before,
@@ -377,7 +377,7 @@ a:focus {
 }
 
 .offset3 {
-  margin-left: 260px;
+  margin-left: 230px;
 }
 
 .offset2 {
